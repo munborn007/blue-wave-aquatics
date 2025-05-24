@@ -2,53 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blue Wave Aquatics - Learn to swim with confidence. Swimming classes for all ages in a safe, professional environment.">
   <title>Blue Wave Aquatics</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f0faff;
+      color: #004f7c;
+    }
+    header {
+      background: linear-gradient(120deg, #00c2ff, #0077be);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #004f7c;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cta-button {
+      background: #00c2ff;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #0077be;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1603072521955-e41c76e09c2c?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .testimonial, .gallery, .contact, .classes {
+      background: white;
+      margin-top: 2rem;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #004f7c;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay">
-      <h1>Welcome to Blue Wave Aquatics</h1>
-      <p>Where Every Splash Builds Confidence!</p>
-      <a href="#enroll" class="btn">Enroll Now</a>
-    </div>
+  <header>
+    <h1>Blue Wave Aquatics</h1>
+    <p>Swim Confident. Swim Smart. Swim Blue.</p>
   </header>
 
-  <section class="about">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#classes">Classes</a>
+    <a href="#register">Register</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Professional Swimming Lessons for All Ages</h2>
+    <a href="#register"><button class="cta-button">Register Now</button></a>
+  </div>
+
+  <section id="about">
     <h2>About Us</h2>
-    <p>Blue Wave Aquatics is a premier swimming academy dedicated to teaching swimming to all ages, from toddlers to adults, with certified instructors and a friendly approach.</p>
+    <p>At Blue Wave Aquatics, we offer swimming classes tailored to all age groups in a safe, professional environment. Our mission is to promote water safety, build confidence, and develop skills through fun, structured lessons.</p>
   </section>
 
-  <section class="programs">
-    <h2>Our Programs</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/kids-swimming.jpg" alt="Kids Learning to Swim"/>
-        <h3>Kids Classes</h3>
-        <p>Fun and safe swimming classes for children aged 3 and above.</p>
-      </div>
-      <div class="card">
-        <img src="images/adults-swimming.jpg" alt="Adult Swimming Lessons"/>
-        <h3>Adult Classes</h3>
-        <p>Beginner to advanced adult programs with flexible timings.</p>
-      </div>
-      <div class="card">
-        <img src="images/private-lesson.jpg" alt="Private Swim Coaching"/>
-        <h3>Private Lessons</h3>
-        <p>One-on-one coaching tailored to your goals and pace.</p>
-      </div>
-    </div>
+  <section id="classes" class="classes">
+    <h2>Our Classes</h2>
+    <ul>
+      <li>🔹 Toddlers (Ages 2–4)</li>
+      <li>🔹 Kids Beginners (Ages 5–10)</li>
+      <li>🔹 Teens & Adults</li>
+      <li>🔹 Advanced Competitive Coaching</li>
+    </ul>
   </section>
 
-  <section id="enroll" class="enroll">
-    <h2>Join Us Today!</h2>
-    <p>Secure your spot now by filling the form. Payments handled securely via JotForm.</p>
-    <a href="https://form.jotform.com/YOUR-JOTFORM-ID" target="_blank" class="btn">Enroll Now</a>
+  <section id="register">
+    <h2>Register Online</h2>
+    <p>Fill the form below to reserve your spot:</p>
+    <iframe src="https://form.jotform.com/YOUR_JOTFORM_ID" width="100%" height="600" frameborder="0" style="border:none;">Loading…</iframe>
+  </section>
+
+  <section id="testimonials" class="testimonial">
+    <h2>What Parents Say</h2>
+    <p>"Blue Wave gave my child the confidence and skills to swim independently. The coaches are amazing!" – <strong>Mrs. Silva</strong></p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Location: Colombo, Sri Lanka</p>
+    <p>📞 Phone: +94 76 123 4567</p>
+    <p>📧 Email: bluewaveaquatics@gmail.com</p>
+    <p><a href="https://wa.me/94761234567" target="_blank">💬 Chat on WhatsApp</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Blue Wave Aquatics | All Rights Reserved</p>
+    &copy; 2025 Blue Wave Aquatics. All rights reserved.
   </footer>
 </body>
 </html>
